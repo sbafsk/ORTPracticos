@@ -15,7 +15,9 @@ and open the template in the editor.
         <script>
             //Ejercicio 11
             var subTotal = parseInt(prompt("Ingrese el sub total"));
-            total = subTotal * 1.22;
+            var ivaPercent = parseInt(prompt("Ingrese porcentaje del IVA"));
+            var iva = subTotal * (ivaPercent/100);
+            var total = subTotal + iva;
             alert("El importe final es $" + total);
         </script>
     </body>
