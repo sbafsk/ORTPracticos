@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio 10</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Ejercicio 10</div>
+        <script>
+            //Ejercicio 10
+            var importe = parseInt(prompt("Ingrese valor del importe"));
+            var recargo = parseInt(prompt("Ingrese el porcentaje de recargo"));
+            var valorRecargo = importe * (recargo/100);
+            var total = importe + valorRecargo;            
+            alert(  
+                    "De un importe $" + importe + 
+                    " con un recargo de " + recargo + 
+                    "% ( $" + valorRecargo + 
+                    " ), el total es $" + total
+                 );
+        </script>
+    </body>
+</html>
